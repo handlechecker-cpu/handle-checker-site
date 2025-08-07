@@ -1,57 +1,63 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f9fc;
-  color: #333;
-  padding: 0;
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
-.container {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f4f7fa, #eaf1f8);
+  color: #333;
+}
+.main-container {
   max-width: 600px;
-  margin: 50px auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
 }
 h1 {
-  text-align: center;
+  font-size: 28px;
   color: #1a73e8;
   margin-bottom: 20px;
 }
 input[type="text"] {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #1a73e8;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 14px;
+  font-size: 18px;
+  border: 2px solid #dfe3e8;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
+button {
+  padding: 14px 24px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 button:hover {
-  background-color: #1669c1;
+  background-color: #145dbf;
 }
 #result {
+  margin-top: 20px;
+  padding: 16px;
   background-color: #f1f3f4;
-  padding: 15px;
-  border-radius: 6px;
+  border-radius: 10px;
   min-height: 40px;
 }
 footer {
+  margin-top: 60px;
   text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 14px;
-  background: #f1f3f4;
+  padding: 30px;
+  background-color: #f4f6f8;
+  border-top: 1px solid #e2e8f0;
+}
+footer p {
+  margin-bottom: 10px;
 }
 footer a {
   color: #1a73e8;
@@ -60,4 +66,19 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+footer .affiliate-buttons {
+  margin-top: 20px;
+}
+footer .affiliate-buttons a button {
+  margin: 8px;
+  background-color: #ffb300;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+footer .affiliate-buttons a button:hover {
+  background-color: #f1a000;
 }
