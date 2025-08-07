@@ -1,7 +1,7 @@
 function checkUsername() {
   const username = document.getElementById("username").value;
   const result = document.getElementById("result");
-  if (username.length === 0) {
+  if (!username) {
     result.textContent = "Please enter a username.";
     return;
   }
